@@ -1,0 +1,70 @@
+\documentclass{beamer}
+    \usepackage{ctex}
+    \usepackage{bm}
+    \usetheme{Antibes}
+    \title{智能显示场景下的机器学习入门}
+    \author{黄帅 / h00370663}
+    \date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section*{目录}
+    \begin{frame}
+        \tableofcontents
+    \end{frame}
+
+\section{介绍}
+    \subsection{什么是学习}
+    \begin{frame}
+        \begin{block}<+->{定义}
+            A computer program is said to learn from experience \textit E with respect to some class of tasks \textit T and performance measure \textit P, if its performance at tasks in \textit T, as measured by \textit P, improves with experience \textit E. (by \textit{Mitchell})
+        \end{block}
+        对于某类任务T和性能度量P,如果一个计算机程序在T上以P衡量的性能随着经验E而自我完善,那么我们称这个计算机程序在从经验E中学习。
+        \begin{itemize}
+            \item 任务T：机器学习所关注的任务是人类很难通过总结具体规则进行解决的任务。
+            \item 性能度量P：为了可以量化地衡量机器学习算法的表现,通常根据不同的任务类型设计相应的性能度量方式。
+            \item 经验E：根据学习过程中获取到的经验种类，机器学习可以分为\textit{有监督学习}和\textit{无监督学习}两大类。
+        \end{itemize}
+    \end{frame}
+
+\section{线性模型}
+    \subsection{线性回归}
+    \begin{frame}
+        \begin{block}<+->{模型定义}
+            \begin{equation}
+                f(\bm x)=\bm{w}^T\bm{x}+b
+            \end{equation}
+            其中，$\bm x$是样本中提取出的特征向量；$\bm w$和$b$是待学习参数。
+        \end{block}
+        ``线性回归''(linear regression)试图学得一个线性模型以尽可能准确地预测实值输出标记.
+    \end{frame}
+
+    \subsection{对数几率回归}
+    \begin{frame}
+        \begin{block}<+->{模型定义}
+            \begin{equation}
+                y=\frac{1}{1+e^{-(\bm w^T\bm x+b)}}
+            \end{equation}
+            其中，$\bm x$是样本中提取出的特征向量；$\bm w$和$b$是待学习参数。
+        \end{block}
+        对数几率回归又称\textit{Logistic Regression},虽然名字中带着回归两个字，但它是一个分类模型。
+    \end{frame}
+
+    \subsection{性能度量}
+    \begin{frame}
+    \end{frame}
+
+\section{应用举例}
+    \subsection{Kaggle竞赛 - Titanic}
+    \begin{frame}
+    \end{frame}
+
+\section{学习材料}
+    \begin{frame}
+    \end{frame}
+
+\end{document}
